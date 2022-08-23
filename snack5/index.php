@@ -46,7 +46,7 @@
             ]
         ],
         [
-            'nome' => 'fadriano',
+            'nome' => 'adriano',
             'cognome' => 'girasole',
             'voti' => [
                 'mate' => 9,
@@ -68,7 +68,8 @@
     ?>
 
     <?php
-    for ($i = 0; $i < count($class); $i++) {
+    $students = count($class);
+    for ($i = 0; $i < $students; $i++) {
     ?>
         <p>
             <?php
