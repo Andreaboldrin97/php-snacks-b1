@@ -22,9 +22,9 @@
     $n_Items = 15;
 
     while (count($numbers) < $n_Items) {
-        $number = rand($min, $max);
-        if (!in_array($number, $numbers)) {
-            $numbers[] = $number;
+        $random_number = rand($min, $max);
+        if (!in_array($random_number, $numbers)) {
+            $numbers[] = $random_number;
         }
         return $numbers;
     }
