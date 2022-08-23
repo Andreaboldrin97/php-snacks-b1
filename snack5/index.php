@@ -9,7 +9,7 @@
 </head>
 
 <body>
-SNACK 7
+    SNACK 7
     <h1>ALUNNI</h1>
     <h3>
         Creare un array contenente qualche alunno di un'ipotetica classe.
@@ -72,7 +72,8 @@ SNACK 7
     ?>
         <p>
             <?php
-            echo ($class[$i]['nome'] . ' ' . $class[$i]['cognome'] . ' media voto : ' . );
+            $sum_Voti = round(array_sum($class[$i]['voti']) / count($class[$i]['voti']));
+            echo ($class[$i]['nome'] . ' ' . $class[$i]['cognome'] . ' media voto : ' . $sum_Voti);
             ?>
         </p>
     <?php
