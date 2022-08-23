@@ -26,7 +26,6 @@
         if (!in_array($random_number, $numbers)) {
             $numbers[] = $random_number;
         }
-        return $numbers;
     }
     var_dump($numbers);
     ?>
